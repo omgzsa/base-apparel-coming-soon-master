@@ -2,32 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style3.css">
+
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <div class="wrapper"> <!-- SITE CONTENT WRAPPER -->
+        
+            <header class="main__header"> <!-- HEADER LOGO -->
+                <img src="images/logo.svg" alt="base apparel logo" class="logo">
+            </header>
 
-  We're coming soon
+            <main class="main__content"> <!-- H1 + TEXT -->
+                <img src="images/hero-mobile.jpg" alt="girl with brown hair mobile" class = "image__primary">
+                <h1 class="main__content__title"><span class="main__content_title-colored">We're</span> coming soon</h1>
+                <p class="main__content__text">Hello fellow shoppers! We're currently building our new fashion store. 
+                    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                
+                <div class="main__form-container"> <!-- FORM -->
+                    <form action="#" class="main__form">
+                        <div class="main__form-item">
+                            <input type="email" name="email-address" id="email" placeholder="Email address">
+                            <button class="main__form-button" type="submit">
+                                <img src="images/icon-arrow.svg" alt="button arrow">
+                            </button>
+                        </div>
+                    </form>    
+                </div>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+            </main>
+            
+        </div>
+    </div>
+        <div class="image__container"> <!-- DESKTOP IMAGE -->
+        <img src="images/hero-desktop.jpg" alt = "girl with brown hair desktop" class = "image__secondary">
+    
 </body>
 </html>
